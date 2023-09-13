@@ -45,9 +45,11 @@ for (const [colorId, colorInformation] of Object.entries(COLORS)){
     colorChoicesContainer.appendChild(newNode)
 }
 // Add function on close
-fullScreenCloseButton.onclick = () => {
+onColorViewClose = () => {
     console.log("Closing...")
     chosenColorContainer.classList.add("hidden")
     fullScreenCloseButton.classList.add("hidden")
     colorChoicesContainer.classList.remove("hidden")
 }
+fullScreenCloseButton.onclick = onColorViewClose
+chosenColorContainer.onclick = onColorViewClose
