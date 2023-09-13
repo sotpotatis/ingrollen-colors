@@ -42,7 +42,7 @@ body {
 #fullScreenCloseButton {
     border: none;
     position: absolute;
-    top: 5vw;
+    top: 5vh;
     right: 5vw;
     background: none;
     color: black;
